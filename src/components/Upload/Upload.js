@@ -4,12 +4,6 @@ class Upload extends Component {
     render() {
         return (
             <>
-            <header>
-                <h1>
-                    MetricsCompiler
-                </h1>
-            </header>
-            <main>
                 <h2>
                     Upload an excel file below to generate a metrics report
                 </h2>
@@ -17,9 +11,6 @@ class Upload extends Component {
                     <input type="file" ID="fileSelect" accept=".xlsx, .xls, .csv"/>
                     <input type="submit" />
                 </form>
-                
-                
-            </main>
             </>
         )
     }

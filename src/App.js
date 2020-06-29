@@ -1,9 +1,20 @@
 import React from 'react';
 import Upload from './components/Upload/Upload';
+import Report from './components/Report/Report';
 
 function App() {
   return (
-    <Upload />
+    <>
+    <header>
+      <h1>
+        MetricsCompiler
+      </h1>
+      </header>
+      <main>
+        <Upload />
+        <Report />
+      </main>
+      </>
   );
 }
 
