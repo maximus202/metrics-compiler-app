@@ -1,6 +1,13 @@
 import React, { Component } from 'react';
 
 class Report extends Component {
+    constructor(props) {
+        super(props);
+        this.state = {
+            
+        }
+    }
+
     render() {
         return (
             <>
@@ -17,28 +24,28 @@ class Report extends Component {
                         <h5>Informational</h5>
                         <table>
                             <tr>
-                                <th>Month</th>
+                                <th>Week</th>
                                 <th>No. of Campaigns</th>
                                 <th>Reach</th>
                                 <th>Impressions</th>
                                 <th>Reach to Impressions Rate</th>
                             </tr>
                             <tr>
-                                <td>May</td>
+                                <td>6/21 - 6/27</td>
                                 <td>7</td>
                                 <td>1383844</td>
                                 <td>28444</td>
                                 <td>2.06%</td>
                             </tr>
                             <tr>
-                                <td>April</td>
+                                <td>6/21 - 6/27</td>
                                 <td>2</td>
                                 <td>13644</td>
                                 <td>2854</td>
                                 <td>20.92%</td>
                             </tr>
                             <tr>
-                                <td>March</td>
+                                <td>6/21 - 6/27</td>
                                 <td>3</td>
                                 <td>283344</td>
                                 <td>7363</td>
@@ -50,28 +57,28 @@ class Report extends Component {
                             <h5>Revenue</h5>
                             <table>
                                 <tr>
-                                    <th>Month</th>
+                                    <th>Week</th>
                                     <th>No. of Campaigns</th>
                                     <th>Reach</th>
                                     <th>Impressions</th>
                                     <th>Reach to Impressions Rate</th>
                                 </tr>
                                 <tr>
-                                    <td>May</td>
+                                    <td>6/21 - 6/27</td>
                                     <td>7</td>
                                     <td>1383844</td>
                                     <td>28444</td>
                                     <td>2.06%</td>
                                 </tr>
                                 <tr>
-                                    <td>April</td>
+                                    <td>6/21 - 6/27</td>
                                     <td>2</td>
                                     <td>13644</td>
                                     <td>2854</td>
                                     <td>20.92%</td>
                                 </tr>
                                 <tr>
-                                    <td>March</td>
+                                    <td>6/21 - 6/27</td>
                                     <td>3</td>
                                     <td>283344</td>
                                     <td>7363</td>
@@ -86,28 +93,28 @@ class Report extends Component {
                         <h5>Informational</h5>
                         <table>
                             <tr>
-                                <th>Month</th>
+                                <th>Week</th>
                                 <th>No. of Campaigns</th>
                                 <th>Reach</th>
                                 <th>Impressions</th>
                                 <th>Reach to Impressions Rate</th>
                             </tr>
                             <tr>
-                                <td>May</td>
+                                <td>6/21 - 6/27</td>
                                 <td>7</td>
                                 <td>1383844</td>
                                 <td>28444</td>
                                 <td>2.06%</td>
                             </tr>
                             <tr>
-                                <td>April</td>
+                                <td>6/21 - 6/27</td>
                                 <td>2</td>
                                 <td>13644</td>
                                 <td>2854</td>
                                 <td>20.92%</td>
                             </tr>
                             <tr>
-                                <td>March</td>
+                                <td>6/21 - 6/27</td>
                                 <td>3</td>
                                 <td>283344</td>
                                 <td>7363</td>
@@ -119,28 +126,28 @@ class Report extends Component {
                         <h5>Revenue</h5>
                         <table>
                             <tr>
-                                <th>Month</th>
+                                <th>6/21 - 6/27</th>
                                 <th>No. of Campaigns</th>
                                 <th>Reach</th>
                                 <th>Impressions</th>
                                 <th>Reach to Impressions Rate</th>
                             </tr>
                             <tr>
-                                <td>May</td>
+                                <td>6/21 - 6/27</td>
                                 <td>7</td>
                                 <td>1383844</td>
                                 <td>28444</td>
                                 <td>2.06%</td>
                             </tr>
                             <tr>
-                                <td>April</td>
+                                <td>6/21 - 6/27</td>
                                 <td>2</td>
                                 <td>13644</td>
                                 <td>2854</td>
                                 <td>20.92%</td>
                             </tr>
                             <tr>
-                                <td>March</td>
+                                <td>6/21 - 6/27</td>
                                 <td>3</td>
                                 <td>283344</td>
                                 <td>7363</td>
