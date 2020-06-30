@@ -22,7 +22,19 @@ function Upload() {
                     purchaseAverageAmount: rows[i][7],
                 })
             };
-            console.log(metrics);
+
+            const otherParams = {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json', 
+                },
+                body: JSON.stringify(metrics)
+            }
+            
+            fetch('http://localhost:8000/', otherParams)
+                .then(res => ((!res.ok)
+                    ? res.json().then((e) => Promise.reject(e))
+                    : console.log(res.json())))
         })
 }
 
