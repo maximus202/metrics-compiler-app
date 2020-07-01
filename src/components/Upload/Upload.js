@@ -9,7 +9,7 @@ function Upload() {
 
         readXlsxFile(input.files[0]).then((rows) => {
             const metrics = [];
-           
+
             for (let i = 1; i < rows.length; i++) {
                 metrics.push({
                     campaignDate: rows[i][0],
@@ -26,29 +26,29 @@ function Upload() {
             const otherParams = {
                 method: 'POST',
                 headers: {
-                    'Content-Type': 'application/json', 
+                    'Content-Type': 'application/json',
                 },
                 body: JSON.stringify(metrics)
             }
-            
+
             fetch('http://localhost:8000/', otherParams)
                 .then(res => ((!res.ok)
                     ? res.json().then((e) => Promise.reject(e))
                     : console.log(res.json())))
         })
-}
+    }
 
-return (
-    <>
-        <h2>
-            Upload an excel file below to generate a metrics report
+    return (
+        <>
+            <h2>
+                Upload an excel file below to generate a metrics report
                 </h2>
-        <form onSubmit={(e) => handleFileUpload(e)}>
-            <input type="file" ID="input" accept=".xlsx, .xls, .csv" />
-            <input type="submit" />
-        </form>
-    </>
-)
+            <form onSubmit={(e) => handleFileUpload(e)}>
+                <input type="file" ID="input" accept=".xlsx, .xls, .csv" />
+                <input type="submit" />
+            </form>
+        </>
+    );
 }
 
 export default Upload;
