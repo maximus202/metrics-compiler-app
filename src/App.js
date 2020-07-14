@@ -1,23 +1,30 @@
-import React, { Component } from 'react';
+import React from 'react';
+import { BrowserRouter, Route, Redirect, Switch } from 'react-router-dom';
+
 import Upload from './components/Upload/Upload';
 import Report from './components/Report/Report';
 
-class App extends Component {
-  render() {
-    return (
-      <>
-        <header>
-          <h1>
-            MetricsCompiler
-      </h1>
-        </header>
-        <main>
-          <Upload />
-          <Report />
-        </main>
-      </>
-    );
-  };
+const App = () => {
+  return (
+    <BrowserRouter>
+      <header>
+        <h1>
+          MetricsCompiler
+          </h1>
+      </header>
+      <main>
+        <Switch>
+          <Route path="/" exact>
+            <Upload />
+          </Route>
+          <Route path="/report" exact>
+            <Report />
+          </Route>
+          <Redirect to="/" />
+        </Switch>
+      </main>
+    </BrowserRouter>
+  );
 }
 
 export default App;
