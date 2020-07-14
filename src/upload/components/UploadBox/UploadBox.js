@@ -1,7 +1,7 @@
 import React from 'react';
 import readXlsxFile from 'read-excel-file';
 
-function Upload() {
+const UploadBox = props => {
     function handleFileUpload(e) {
         e.preventDefault();
 
@@ -36,10 +36,10 @@ function Upload() {
                     ? res.json().then((e) => Promise.reject(e))
                     : console.log(res.json())))
         })
-    }
+    };
 
     return (
-        <>
+        <React.Fragment>
             <h2>
                 Upload an excel file below to generate a metrics report
                 </h2>
@@ -47,8 +47,8 @@ function Upload() {
                 <input type="file" ID="input" accept=".xlsx, .xls, .csv" />
                 <input type="submit" />
             </form>
-        </>
-    );
+        </React.Fragment>
+    )
 }
 
-export default Upload;
+export default UploadBox;

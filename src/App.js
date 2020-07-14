@@ -1,8 +1,8 @@
 import React from 'react';
 import { BrowserRouter, Route, Redirect, Switch } from 'react-router-dom';
 
-import Upload from './components/Upload/Upload';
-import Report from './components/Report/Report';
+import Upload from './upload/pages/Upload';
+import Report from './report/pages/Report';
 
 const App = () => {
   return (

@@ -1,11 +1,11 @@
 import React from 'react';
 
-function Report() {
+const Report = props => {
     return (
         <>
             <h2>
                 Metrics Report
-                </h2>
+            </h2>
             <section>
                 <h3>
                     Reach to Impressions
