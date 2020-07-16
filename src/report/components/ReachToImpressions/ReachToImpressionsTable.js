@@ -12,7 +12,7 @@ const ReachToImpressionsTable = props => {
                 <th>Impressions</th>
                 <th>Reach to Impressions Rate</th>
             </tr>
-            {props.ctaMetrics.map((row) => <ReachToImpressionsRow key={row.id} row={row} />)}
+            {props.ctaMetrics.map((row) => <ReachToImpressionsRow row={row} />)}
         </table>
     );
 }
