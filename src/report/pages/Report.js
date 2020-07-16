@@ -2,6 +2,7 @@ import React from 'react';
 
 import ReachToImpressions from '../components/ReachToImpressions/ReachToImpressions';
 import ClickThroughRates from '../components/ClickThroughRates/ClickThroughRates';
+import Revenue from '../components/Revenue/Revenue';
 
 const Report = props => {
     const METRICS = {
@@ -225,6 +226,104 @@ const Report = props => {
                 ]
             }
         ],
+        revenue: [
+            {
+                diamonds: [
+                    {
+                        informational: [
+                            {
+                                week: '6/22 - 6/28',
+                                orders: '1733',
+                                purchaseAvg: '$120.33',
+                                revenue: '$208,531.89',
+                            },
+                            {
+                                week: '6/29 - 7/5',
+                                orders: '1733',
+                                purchaseAvg: '$120.33',
+                                revenue: '$208,531.89',
+                            },
+                            {
+                                week: '7/6 - 7/12',
+                                orders: '1733',
+                                purchaseAvg: '$120.33',
+                                revenue: '$208,531.89',
+                            },
+                        ]
+                    },
+                    {
+                        revenue: [
+                            {
+                                week: '6/22 - 6/28',
+                                orders: '1733',
+                                purchaseAvg: '$120.33',
+                                revenue: '$208,531.89',
+                            },
+                            {
+                                week: '6/29 - 7/5',
+                                orders: '1733',
+                                purchaseAvg: '$120.33',
+                                revenue: '$208,531.89',
+                            },
+                            {
+                                week: '7/6 - 7/12',
+                                orders: '1733',
+                                purchaseAvg: '$120.33',
+                                revenue: '$208,531.89',
+                            },
+                        ]
+                    }
+                ]
+            },
+            {
+                usnfr: [
+                    {
+                        informational: [
+                            {
+                                week: '6/22 - 6/28',
+                                orders: '1733',
+                                purchaseAvg: '$120.33',
+                                revenue: '$208,531.89',
+                            },
+                            {
+                                week: '6/29 - 7/5',
+                                orders: '1733',
+                                purchaseAvg: '$120.33',
+                                revenue: '$208,531.89',
+                            },
+                            {
+                                week: '7/6 - 7/12',
+                                orders: '1733',
+                                purchaseAvg: '$120.33',
+                                revenue: '$208,531.89',
+                            },
+                        ]
+                    },
+                    {
+                        revenue: [
+                            {
+                                week: '6/22 - 6/28',
+                                orders: '1733',
+                                purchaseAvg: '$120.33',
+                                revenue: '$208,531.89',
+                            },
+                            {
+                                week: '6/29 - 7/5',
+                                orders: '1733',
+                                purchaseAvg: '$120.33',
+                                revenue: '$208,531.89',
+                            },
+                            {
+                                week: '7/6 - 7/12',
+                                orders: '1733',
+                                purchaseAvg: '$120.33',
+                                revenue: '$208,531.89',
+                            },
+                        ]
+                    }
+                ]
+            }
+        ],
     };
 
     return (
@@ -235,6 +334,7 @@ const Report = props => {
             <section>
                 <ReachToImpressions metrics={METRICS.reachToImpressions} />
                 <ClickThroughRates metrics={METRICS.clickThroughRates} />
+                <Revenue metrics={METRICS.revenue} />
             </section>
         </React.Fragment>
     );
