@@ -332,6 +332,9 @@ const Report = props => {
                 Metrics Report
             </h2>
             <section>
+                Date created:
+            </section>
+            <section>
                 <ReachToImpressions metrics={METRICS.reachToImpressions} />
                 <ClickThroughRates metrics={METRICS.clickThroughRates} />
                 <Revenue metrics={METRICS.revenue} />
