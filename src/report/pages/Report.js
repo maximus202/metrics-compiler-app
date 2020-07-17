@@ -3,6 +3,7 @@ import React from 'react';
 import ReachToImpressions from '../components/ReachToImpressions/ReachToImpressions';
 import ClickThroughRates from '../components/ClickThroughRates/ClickThroughRates';
 import Revenue from '../components/Revenue/Revenue';
+import TopCampaignsClicks from '../components/TopCampaignsClicks/TopCampaignsClicks';
 
 const Report = props => {
     const METRICS = {
@@ -324,6 +325,58 @@ const Report = props => {
                 ]
             }
         ],
+        topCampaignsClicks: [
+            {
+                diamonds: [
+                    {
+                        date: '7/16/2020',
+                        campaignName: 'July PV Promo',
+                        reach: '1344844',
+                        clicks: '13844',
+                        clickThroughRate: '1.03%',
+                    },
+                    {
+                        date: '7/16/2020',
+                        campaignName: 'July PV Promo',
+                        reach: '1344844',
+                        clicks: '13844',
+                        clickThroughRate: '1.03%',
+                    },
+                    {
+                        date: '7/16/2020',
+                        campaignName: 'July PV Promo',
+                        reach: '1344844',
+                        clicks: '13844',
+                        clickThroughRate: '1.03%',
+                    },
+                ],
+            },
+            {
+                usnfr: [
+                    {
+                        date: '7/16/2020',
+                        campaignName: 'July PV Promo',
+                        reach: '1344844',
+                        clicks: '13844',
+                        clickThroughRate: '1.03%',
+                    },
+                    {
+                        date: '7/16/2020',
+                        campaignName: 'July PV Promo',
+                        reach: '1344844',
+                        clicks: '13844',
+                        clickThroughRate: '1.03%',
+                    },
+                    {
+                        date: '7/16/2020',
+                        campaignName: 'July PV Promo',
+                        reach: '1344844',
+                        clicks: '13844',
+                        clickThroughRate: '1.03%',
+                    },
+                ],
+            },
+        ],
     };
 
     return (
@@ -338,6 +391,7 @@ const Report = props => {
                 <ReachToImpressions metrics={METRICS.reachToImpressions} />
                 <ClickThroughRates metrics={METRICS.clickThroughRates} />
                 <Revenue metrics={METRICS.revenue} />
+                <TopCampaignsClicks metrics={METRICS.topCampaignsClicks} />
             </section>
         </React.Fragment>
     );

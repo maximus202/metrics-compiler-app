@@ -1,7 +1,6 @@
 import React from 'react';
 
 const RevenueRow = props => {
-    console.log(props.row)
     return (
         <tr>
             <td>{props.row.week}</td>
