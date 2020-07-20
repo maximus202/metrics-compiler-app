@@ -3,7 +3,6 @@ import React from 'react';
 import TopCampaignsClicksRow from './TopCampaignsClicksRow';
 
 const TopCampaignsClicksTable = props => {
-    console.log(props.audienceMetrics)
     return (
         <table>
             <tr>
