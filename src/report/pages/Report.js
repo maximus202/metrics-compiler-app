@@ -5,6 +5,7 @@ import ClickThroughRates from '../components/ClickThroughRates/ClickThroughRates
 import Revenue from '../components/Revenue/Revenue';
 import TopCampaignsClicks from '../components/TopCampaignsClicks/TopCampaignsClicks';
 import TopCampaignsRev from '../components/TopCampaignsRev/TopCampaignsRev';
+import UnsubscribesByCampaign from '../components/UnsubscribesByCampaign/UnsubscribesByCampaign';
 
 const Report = props => {
     const METRICS = {
@@ -442,6 +443,58 @@ const Report = props => {
                 ],
             },
         ],
+        unsubscribesByCampaign: [
+            {
+                diamonds: [
+                    {
+                        date: '7/16/2020',
+                        campaignName: 'July PV Promo',
+                        reach: '148444',
+                        unsubscribes: '42344',
+                        unsubscribeRate: '28%',
+                    },
+                    {
+                        date: '7/16/2020',
+                        campaignName: 'July PV Promo',
+                        reach: '148444',
+                        unsubscribes: '42344',
+                        unsubscribeRate: '28%',
+                    },
+                    {
+                        date: '7/16/2020',
+                        campaignName: 'July PV Promo',
+                        reach: '148444',
+                        unsubscribes: '42344',
+                        unsubscribeRate: '28%',
+                    },
+                ],
+            },
+            {
+                usnfr: [
+                    {
+                        date: '7/16/2020',
+                        campaignName: 'July PV Promo',
+                        reach: '148444',
+                        unsubscribes: '42344',
+                        unsubscribeRate: '28%',
+                    },
+                    {
+                        date: '7/16/2020',
+                        campaignName: 'July PV Promo',
+                        reach: '148444',
+                        unsubscribes: '42344',
+                        unsubscribeRate: '28%',
+                    },
+                    {
+                        date: '7/16/2020',
+                        campaignName: 'July PV Promo',
+                        reach: '148444',
+                        unsubscribes: '42344',
+                        unsubscribeRate: '28%',
+                    },
+                ],
+            },
+        ],
     };
 
     return (
@@ -458,6 +511,7 @@ const Report = props => {
                 <Revenue metrics={METRICS.revenue} />
                 <TopCampaignsClicks metrics={METRICS.topCampaignsClicks} />
                 <TopCampaignsRev metrics={METRICS.topCampaignsRev} />
+                <UnsubscribesByCampaign metrics={METRICS.unsubscribesByCampaign} />
             </section>
         </React.Fragment>
     );
