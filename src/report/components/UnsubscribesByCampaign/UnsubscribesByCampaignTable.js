@@ -3,7 +3,6 @@ import React from 'react';
 import UnsubscribesByCampaignRow from './UnsubscribesByCampaignRow';
 
 const UnsubscribesByCampaignTable = props => {
-    console.log(props.audience)
     return (
         <table>
             <tr>

@@ -11,6 +11,15 @@ import UnsubscribesByCampaign from '../components/UnsubscribesByCampaign/Unsubsc
 const Report = props => {
     const METRICS = {
         reportName: 'U.S. Email Marketing - May 2020',
+        overview: {
+            averageEngagementLast7Days: '4.72%',
+            averageEngagementOverall: '4.90%',
+            averageClicksLast7Days: '2.10%',
+            averageClicksOverall: '2%',
+            averageUnsubscribeLast7Days: '1%',
+            averageUnsubscribeOverall: '1.20%',
+            revenueLast7Days: '$832,000'
+        },
         reachToImpressions: [
             {
                 diamonds: [
@@ -507,10 +516,7 @@ const Report = props => {
                 </h1>
             </header>
             <section>
-                Date created:
-            </section>
-            <section>
-                <Overview />
+                <Overview metrics={METRICS.overview}/>
                 <ReachToImpressions metrics={METRICS.reachToImpressions} />
                 <ClickThroughRates metrics={METRICS.clickThroughRates} />
                 <Revenue metrics={METRICS.revenue} />
