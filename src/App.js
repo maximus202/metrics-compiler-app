@@ -7,11 +7,6 @@ import Report from './report/pages/Report';
 const App = () => {
   return (
     <BrowserRouter>
-      <header>
-        <h1>
-          MetricsCompiler
-          </h1>
-      </header>
       <main>
         <Switch>
           <Route path="/" exact>

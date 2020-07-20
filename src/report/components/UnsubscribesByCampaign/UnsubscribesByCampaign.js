@@ -5,7 +5,7 @@ import UnsubscribesByCampaignAudience from './UnsubscribesByCampaignAudience';
 const UnsubscribesByCampaign = props => {
     return (
         <React.Fragment>
-            <h3>Unsubscribes by Campaign (Last 14 days)</h3>
+            <h2>Unsubscribes by Campaign (Last 14 days)</h2>
             {props.metrics.map(audience => <UnsubscribesByCampaignAudience audience={audience} />)}
         </React.Fragment>
     );

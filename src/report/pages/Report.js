@@ -9,6 +9,7 @@ import UnsubscribesByCampaign from '../components/UnsubscribesByCampaign/Unsubsc
 
 const Report = props => {
     const METRICS = {
+        reportName: 'U.S. Email Marketing - May 2020',
         reachToImpressions: [
             {
                 diamonds: [
@@ -499,9 +500,11 @@ const Report = props => {
 
     return (
         <React.Fragment>
-            <h2>
-                Metrics Report
-            </h2>
+            <header>
+                <h1>
+                    Metrics Report: {METRICS.reportName}
+                </h1>
+            </header>
             <section>
                 Date created:
             </section>

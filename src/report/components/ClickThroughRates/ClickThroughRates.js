@@ -6,7 +6,7 @@ const ClickThroughRates = props => {
     console.log(props.metrics)
     return (
         <React.Fragment>
-            <h3>Click Through Rates</h3>
+            <h2>Click Through Rates</h2>
             {props.metrics.map((audience) => <ClickThroughRatesAudience audience={audience} />)}
         </React.Fragment>
     );
