@@ -1,5 +1,6 @@
 import React from 'react';
 
+import Overview from '../components/Overview/Overview';
 import ReachToImpressions from '../components/ReachToImpressions/ReachToImpressions';
 import ClickThroughRates from '../components/ClickThroughRates/ClickThroughRates';
 import Revenue from '../components/Revenue/Revenue';
@@ -509,6 +510,7 @@ const Report = props => {
                 Date created:
             </section>
             <section>
+                <Overview />
                 <ReachToImpressions metrics={METRICS.reachToImpressions} />
                 <ClickThroughRates metrics={METRICS.clickThroughRates} />
                 <Revenue metrics={METRICS.revenue} />
