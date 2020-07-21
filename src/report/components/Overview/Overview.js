@@ -1,7 +1,6 @@
 import React from 'react';
 
 const Overview = props => {
-    console.log(props)
     return (
         <React.Fragment>
             <h2>General Overview (last 7 days)</h2>
