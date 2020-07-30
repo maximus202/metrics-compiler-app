@@ -10,12 +10,15 @@ class App extends Component {
     super(props);
     this.state = {
       reportName: '',
-      overview: null,
-      metricsReport: null,
+      report: null,
     };
   }
 
-  handleFileUpload(e) {
+  handleSetReportName = e => {
+    this.setState({ reportName: e.target.value });
+  }
+
+  handleFileUpload = e => {
     e.preventDefault();
 
     const input = document.getElementById('input');
@@ -47,9 +50,15 @@ class App extends Component {
       fetch('http://localhost:8000/', otherParams)
         .then(res => ((!res.ok)
           ? res.json().then((e) => Promise.reject(e))
-          : console.log(res.json())))
-    })
+          : res.json()
+        ))
+        .then(res => {
+          this.setState({ report: res });
+        })
+    });    
   };
+
+
 
   render() {
     return (
@@ -57,7 +66,7 @@ class App extends Component {
         <main>
           <Switch>
             <Route path="/" exact>
-              <Upload handleFileUpload={this.handleFileUpload} />
+              <Upload handleFileUpload={this.handleFileUpload} handleSetReportName={this.handleSetReportName}/>
             </Route>
             <Route path="/report" exact>
               <Report />

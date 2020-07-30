@@ -13,7 +13,7 @@ const UploadBox = props => {
                 </h2>
             <form onSubmit={(e) => props.handleFileUpload(e)}>
                 <label for="report-name">Report name</label>
-                <input type="text" id="report-name" />
+                <input type="text" id="report-name" onChange={(e) => props.handleSetReportName(e)}/>
                 <input type="file" ID="input" accept=".xlsx, .xls, .csv" />
                 <input type="submit" />
             </form>
