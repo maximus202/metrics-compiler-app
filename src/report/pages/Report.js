@@ -9,7 +9,7 @@ import TopCampaignsRev from '../components/TopCampaignsRev/TopCampaignsRev';
 import UnsubscribesByCampaign from '../components/UnsubscribesByCampaign/UnsubscribesByCampaign';
 
 class Report extends Component {
-    constructor(props) {
+    /*constructor(props) {
         super(props);
         this.state = {
             reportName: 'U.S. Email Marketing - May 2020',
@@ -509,9 +509,10 @@ class Report extends Component {
                 },
             ],
         };
-    } 
+    }*/
 
     render() {
+        console.log(this.props)
         return (
             <React.Fragment>
                 <header>

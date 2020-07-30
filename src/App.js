@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import { BrowserRouter, Route, Redirect, Switch } from 'react-router-dom';
 import readXlsxFile from 'read-excel-file';
 
+
 import Upload from './upload/pages/Upload';
 import Report from './report/pages/Report';
 
@@ -18,7 +19,7 @@ class App extends Component {
     this.setState({ reportName: e.target.value });
   }
 
-  handleFileUpload = e => {
+  handleFileUpload = (e, history) => {
     e.preventDefault();
 
     const input = document.getElementById('input');
@@ -55,6 +56,7 @@ class App extends Component {
         .then(res => {
           this.setState({ report: res });
         })
+      .then(() => history.push('/report'))
     });    
   };
 
@@ -65,11 +67,18 @@ class App extends Component {
       <BrowserRouter>
         <main>
           <Switch>
-            <Route path="/" exact>
-              <Upload handleFileUpload={this.handleFileUpload} handleSetReportName={this.handleSetReportName}/>
+            <Route
+              path="/"
+              exact>
+              <Upload
+                history={this.props}
+                handleFileUpload={this.handleFileUpload}
+                handleSetReportName={this.handleSetReportName} />
             </Route>
-            <Route path="/report" exact>
-              <Report />
+            <Route
+              path="/report"
+              exact>
+              <Report metrics={this.state}/>
             </Route>
             <Redirect to="/" />
           </Switch>
